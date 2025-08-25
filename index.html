@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Site Title</title>
+  <style>
+    :root{
+      --bg:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#475569; --border:#e2e8f0;
+    }
+	.divider{
+  		width: min(60%, 600px);
+  		height: 2px;
+  		margin: 12px auto 14px;
+  		border: 0;
+  		background: var(--border);
+  		border-radius: 999px;
+	}
+    *{box-sizing:border-box}
+    body{margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text); background:var(--bg)}
+    .container{width:min(100%,900px); margin:0 auto; padding:24px}
+    .center{text-align:center}
+    h1,h2,h3{margin:0 0 10px; text-align:center; font-weight:800}
+    h1{font-size:clamp(20px,4.5vw,36px)}
+    h2{font-size:clamp(16px,3.2vw,24px)}
+    h3{font-size:clamp(12px,2.4vw,20px)}
+    .section{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:22px; margin-top:18px}
+    img{display:block; max-width:100%; height:auto; border-radius:12px; border:1px solid var(--border)}
+    .download-link{display:inline-block; margin-top:10px; padding:10px 14px; border:1px solid var(--border); border-radius:10px; background:#f1f5f9; text-decoration:none}
+    .download-link:hover{background:#e2e8f0}
+    footer small{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <!-- Header: bold + centered title/subtitles -->
+  <header class="container center" role="banner">
+    <h1><strong>Power Stroller: An Attachment for Airport Wheelchairs for Faster Travel</strong></h1>
+    <hr class="divider" aria-hidden="true">
+    <h2><strong>Columbia University, Creative Machines Lab</strong></h2>
+    <h3><strong>Professor Hod Lipson, Kerry Mureti, Sebastian Brian Galbenus, Andrew Campos</strong></h3>
+  </header>
+
+  <main class="container" id="content">
+    <!-- Section 1: Title + Picture -->
+    <section class="section" aria-labelledby="picture-title">
+      <h2 id="picture-title">Power Stroller CAD</h2>
+      <img src="assets/images/your-image.jpg" alt="Isometric view of current iteration" />
+    </section>
+
+    <!-- Section 2: Title + Download link -->
+    <section class="section center" aria-labelledby="download-title">
+      <h2 id="download-title">Download CAD files</h2>
+      <p>parts, assemblies, drawings, past iterations</p>
+      <a class="download-link" href="assets/downloads/your-file.zip" download>Download</a>
+    </section>
+  </main>
+</body>
+</html>
